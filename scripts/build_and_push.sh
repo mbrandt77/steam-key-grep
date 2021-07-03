@@ -38,7 +38,7 @@ purge_none_images(){
 
 
 GIT_SHORT_SHA=$(git rev-parse --short HEAD)
-IMAGE="registry.gitlab.com/mibr7/steam-key-grep:${GIT_SHORT_SHA}"
+IMAGE="ghcr.io/mbrandt77/steam-key-grep:${GIT_SHORT_SHA}"
 
 build_image $IMAGE
 push_image $IMAGE

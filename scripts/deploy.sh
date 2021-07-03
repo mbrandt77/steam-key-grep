@@ -34,6 +34,6 @@ fi
 
 stop_old_container
 
-IMAGE="registry.gitlab.com/mibr7/steam-key-grep:${TAG}"
+IMAGE="ghcr.io/mbrandt77/steam-key-grep:${TAG}"
 
 deploy_bot "${IMAGE}"
