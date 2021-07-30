@@ -1,3 +1,5 @@
 conf.yaml
-secrets/
-pkg/steamkeygrep/testdata/**
+**/secrets/
+grepper/pkg/steamkeygrep/testdata/**
+
+**/node_modules

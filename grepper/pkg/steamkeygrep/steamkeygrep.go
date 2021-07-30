@@ -90,7 +90,7 @@ func getJsonFromUrl(urls <-chan string, js chan<- []byte, errs chan<- error, tok
 			errs <- fmt.Errorf("can not read response body\n%v", err)
 		}
 		resp.Body.Close()
-		// fmt.Println(string(body)) TODO: error handling
+		fmt.Println(string(body)) // TODO: error handling
 		js <- body
 	}
 }
